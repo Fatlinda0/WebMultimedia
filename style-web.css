@@ -368,7 +368,8 @@ header{
   flex: 1;
   padding: 20px;
   box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
-  border-radius: 0.5rem;
+  border: none;
+  border-left: 3px solid var(--purple-color);
   position: relative;
 }
 .footer-column:not(:last-child) {
