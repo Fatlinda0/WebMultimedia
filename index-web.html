@@ -12,13 +12,14 @@
   <div id="preloader"></div>
   
      <header>
-        <a href="#" class="logo">Germany</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+      <a href="#" class="logo">Germany</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
-          <li><a href="#home" class="home-active">Home</a></li>
+          <li><a href="index-web.html" class="home-active">Home</a></li>
           <li><a href="#places">Places</a></li>
           <li><a href="#visitors">Visitors</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
         <div class="profile">
             <img src="images/flag.jpg" alt="">
@@ -104,7 +105,7 @@
               <audio id="audio">
                 <source src="videos/lake.mp3" type="audio/mp3">
               </audio>
-              <button class="buttonSound" onclick="playAudio()">Play Sound</button>
+              <button id="buttonSound" class="buttonSound" onclick="playAudio()">Play Sound</button>
             </div>
             
             <span>Königssee</span>
@@ -115,10 +116,77 @@
       </section>
 
       <section class="visitors" id="visitors">
-        <h2>Visitor's Gallery</h2>
+        <h2 class="heading">Visitor's Gallery</h2>
+        <div class="visitors-container">
+          <div class="box">
+            <p>Embark on a captivating journey through Germany as visitors share their firsthand experiences. 
+              Discover the mesmerizing world of this remarkable country through their eyes. 
+              What does Germany truly look like through the perspectives of its visitors? Join us and explore the allure and wonder that awaits.</p>
+            <br>
+            <div class="button">
+              <a href="visitors.html"> <button id="buttonSound" class="buttonVisitor">Press here!</button></a>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <section class="about" id="about">
+        <img src="images/flag.jpg">
+        <div class="about-text">
+          <h1>About Us</h1>
+          <p>Welcome to our platform, where we invite you to embark on a captivating journey through Germany, as visitors from around the globe share their firsthand experiences.</p>
+          <p>Let the experiences of fellow travelers ignite your curiosity, inspire your wanderlust, and provide you with a glimpse into the heart and soul of Germany. Whether you are planning your own visit or simply seeking to indulge in armchair travel, we are here to accompany you on this immersive journey.</p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-box">
+            <div class="footer-column">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Follow Us</h3>
+              <ul class="social-icons">
+                <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>        
+        <div class="copyright">
+          <p>&#169; Fatlinda Berisha and Vlora Dili. All Right Reserved.</p>
+        </div>        
+      </footer>
+      
 
       <script src="main.js"></script>
+      <script src="https://pixijs.download/release/pixi.js"></script>
 </body>
 </html>

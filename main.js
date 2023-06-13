@@ -39,9 +39,9 @@ function playAudio() {
   
   if (audio.paused) {
     audio.play();
-    button.innerHTML = "Ndalo Audio";
+    button.innerHTML = "Stop Audio";
   } else {
     audio.pause();
-    button.innerHTML = "Luaj Audio";
+    button.innerHTML = "Play Audio";
   }
 }
