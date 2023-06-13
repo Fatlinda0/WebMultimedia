@@ -1,3 +1,9 @@
+/* preloader */
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+})
+
 /*slideri*/
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -24,4 +30,18 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+/* audio te images */
+function playAudio() {
+  var audio = document.getElementById("audio");
+  var button = document.getElementById("playButton");
+  
+  if (audio.paused) {
+    audio.play();
+    button.innerHTML = "Ndalo Audio";
+  } else {
+    audio.pause();
+    button.innerHTML = "Luaj Audio";
+  }
 }
